@@ -1,6 +1,3 @@
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style_aside.css ***!
-  \******************************************************************************/
 .not-visible {
   visibility: hidden;
   opacity: 0;
@@ -198,9 +195,6 @@
   }
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style_modal.css ***!
-  \******************************************************************************/
 .not-visibile {
   visibility: hidden;
   opacity: 0;
@@ -375,9 +369,6 @@
   }
 }
 
-/*!************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style.css ***!
-  \************************************************************************/
 @font-face {
   font-family: "TT Lakes Regular";
   src: url(ecf08c49b0b1d4d71f5b.woff) format("woff");
@@ -1299,9 +1290,6 @@ a {
   }
 }
 
-/*!*****************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css ***!
-  \*****************************************************************************************/
 /**
  * Swiper 6.8.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1851,4 +1839,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.00975b8ed8e835f25e13.css.map*/
+/*# sourceMappingURL=style.a58237a6334a851f09fd.css.map*/
