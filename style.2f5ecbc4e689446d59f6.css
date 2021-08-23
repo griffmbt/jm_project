@@ -1,3 +1,7 @@
+.restrictScroll {
+  overflow: hidden;
+}
+
 .not-visible {
   visibility: hidden;
   opacity: 0;
@@ -14,14 +18,18 @@
 
 .page__aside {
   min-width: 300px;
-  height: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
   font-family: "TT Lakes Medium";
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
   background-color: #ffffff;
   border-bottom: 1px solid white;
-}
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .menu__container {
   margin: 0 auto;
@@ -151,7 +159,7 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
-  .aside{
+  .aside {
     position: fixed;
     top: 0;
     left: 0;
@@ -159,24 +167,38 @@
     height: 100%;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.842);
+
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
   }
 
   .page__aside {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 320px;
     height: 100%;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    transition-property: left;
+    transition-duration: 0.45s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .appear__left {
+    left: 0;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .aside{
+  .aside {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.842);
   }
@@ -184,10 +206,18 @@
   .page__aside {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 320px;
     height: 100%;
     overflow: auto;
+
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .appear__left {
+    left: 0;
   }
 
   .button--burger-close {
@@ -195,12 +225,12 @@
   }
 }
 
-.not-visibile {
+.not-visible {
   visibility: hidden;
   opacity: 0;
 }
 
-.visibile {
+.visible {
   visibility: visible;
   opacity: 1;
 }
@@ -306,7 +336,7 @@
   color: #ff3e79;
 }
 
-.modal__button {
+.modal__button.button {
   width: 119px;
   height: 32px;
   border-radius: 16px;
@@ -1049,18 +1079,8 @@ a {
   .swiper-slide {
     text-align: center;
     background: #f8f8f8;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -1425,10 +1445,12 @@ a {
   scroll-snap-align: start start;
 }
 .swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 :root {
   --swiper-navigation-size: 44px;
@@ -1559,7 +1581,8 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-          appearance: none;
+          -moz-appearance: none;
+       appearance: none;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
@@ -1716,7 +1739,8 @@ button.swiper-pagination-bullet {
   margin-top: -21px;
   z-index: 10;
   transform-origin: 50%;
-  animation: swiper-preloader-spin 1s infinite linear;
+  -webkit-animation: swiper-preloader-spin 1s infinite linear;
+          animation: swiper-preloader-spin 1s infinite linear;
   box-sizing: border-box;
   border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
   border-radius: 50%;
@@ -1727,6 +1751,11 @@ button.swiper-pagination-bullet {
 }
 .swiper-lazy-preloader-black {
   --swiper-preloader-color: #000;
+}
+@-webkit-keyframes swiper-preloader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes swiper-preloader-spin {
   100% {
@@ -1839,4 +1868,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.a58237a6334a851f09fd.css.map*/
+/*# sourceMappingURL=style.2f5ecbc4e689446d59f6.css.map*/
