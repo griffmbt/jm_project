@@ -1837,9 +1837,12 @@ var scroll = shortcut('scroll');
 /*!***********************************************!*\
   !*** ./node_modules/swiper/swiper-bundle.css ***!
   \***********************************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nValidationError: Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.\n - options has an unknown property 'plugins'. These properties are valid:\n   object { postcssOptions?, execute?, sourceMap?, implementation? }\n    at validate (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/schema-utils/dist/validate.js:105:11)\n    at Object.getOptions (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:539:19)\n    at Object.loader (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/postcss-loader/dist/index.js:40:24)\n    at processResult (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:713:19)\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:819:5\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/loader-runner/lib/LoaderRunner.js:251:18");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -1847,9 +1850,12 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /*!******************************!*\
   !*** ./src/styles/style.css ***!
   \******************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nValidationError: Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.\n - options has an unknown property 'plugins'. These properties are valid:\n   object { postcssOptions?, execute?, sourceMap?, implementation? }\n    at validate (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/schema-utils/dist/validate.js:105:11)\n    at Object.getOptions (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:539:19)\n    at Object.loader (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/postcss-loader/dist/index.js:40:24)\n    at processResult (/Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:713:19)\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/webpack/lib/NormalModule.js:819:5\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Volumes/DISK 1/Users/svtotc/Documents/FRONT END/обучение в JM /готовый проект JM/jm_project/node_modules/loader-runner/lib/LoaderRunner.js:251:18");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -12307,10 +12313,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal */ "./src/js/modal.js");
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modal__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 /* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/swiper-bundle.css */ "./node_modules/swiper/swiper-bundle.css");
-/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -12469,4 +12473,4 @@ function outsideClick(e) {
 }();
 /******/ })()
 ;
-//# sourceMappingURL=bungle.59876c072da65d97a893.js.map
+//# sourceMappingURL=bungle.5ee753f941fc6d5bbf44.js.map
