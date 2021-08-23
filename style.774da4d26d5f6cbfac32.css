@@ -23,6 +23,10 @@
     16px 0px 52px rgba(14, 24, 80, 0.2);
   background-color: #ffffff;
   border-bottom: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -1850,4 +1854,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.3d521b9df96c0ab32b64.css.map*/
+/*# sourceMappingURL=style.774da4d26d5f6cbfac32.css.map*/
