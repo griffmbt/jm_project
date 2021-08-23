@@ -1,3 +1,6 @@
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style_aside.css ***!
+  \******************************************************************************/
 .not-visible {
   visibility: hidden;
   opacity: 0;
@@ -195,6 +198,9 @@
   }
 }
 
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style_modal.css ***!
+  \******************************************************************************/
 .not-visibile {
   visibility: hidden;
   opacity: 0;
@@ -369,6 +375,9 @@
   }
 }
 
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/styles/style.css ***!
+  \******************************************************************************************************************/
 @font-face {
   font-family: "TT Lakes Regular";
   src: url(ecf08c49b0b1d4d71f5b.woff) format("woff");
@@ -1049,18 +1058,8 @@ a {
   .swiper-slide {
     text-align: center;
     background: #f8f8f8;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -1290,6 +1289,9 @@ a {
   }
 }
 
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css ***!
+  \***********************************************************************************************************************************/
 /**
  * Swiper 6.8.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1425,10 +1427,12 @@ a {
   scroll-snap-align: start start;
 }
 .swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 :root {
   --swiper-navigation-size: 44px;
@@ -1559,7 +1563,8 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-          appearance: none;
+          -moz-appearance: none;
+       appearance: none;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
@@ -1716,7 +1721,8 @@ button.swiper-pagination-bullet {
   margin-top: -21px;
   z-index: 10;
   transform-origin: 50%;
-  animation: swiper-preloader-spin 1s infinite linear;
+  -webkit-animation: swiper-preloader-spin 1s infinite linear;
+          animation: swiper-preloader-spin 1s infinite linear;
   box-sizing: border-box;
   border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
   border-radius: 50%;
@@ -1727,6 +1733,11 @@ button.swiper-pagination-bullet {
 }
 .swiper-lazy-preloader-black {
   --swiper-preloader-color: #000;
+}
+@-webkit-keyframes swiper-preloader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes swiper-preloader-spin {
   100% {
@@ -1839,4 +1850,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.a58237a6334a851f09fd.css.map*/
+/*# sourceMappingURL=style.bf6c86d60af7fbba0430.css.map*/
