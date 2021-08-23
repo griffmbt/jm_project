@@ -1,3 +1,7 @@
+import { body, aside } from "./index";
+
+const modals = document.querySelectorAll(".modal");
+
 const chatButtonHeader = document.querySelector(".header__button--chat");
 const chatButtonAside = document.querySelector(".button--chat");
 
@@ -10,31 +14,79 @@ const modalButtonClose = document.querySelectorAll(".modal__close");
 const modalFeedback = document.querySelector(".modal__feedback");
 const modalCall = document.querySelector(".modal__call");
 
-chatButtonHeader.addEventListener("click", () => {
+const removeFeedback = function () {
   modalFeedback.classList.remove("not-visible");
+  body.classList.add("restrictScroll");
+};
+const removeCall = function () {
+  modalCall.classList.remove("not-visible");
+  body.classList.add("restrictScroll");
+};
+
+const addFeedback = function () {
+  modalFeedback.classList.add("not-visible");
+
+  if (window.innerWidth <= 768) {
+    if (!aside.classList.contains("not-visible")) {
+      body.classList.add("restrictScroll");
+    } else {
+      body.classList.remove("restrictScroll");
+    }
+  } else {
+    body.classList.remove("restrictScroll");
+  }
+};
+
+const addCall = function () {
+  modalCall.classList.add("not-visible");
+
+  if (window.innerWidth <= 768) {
+    if (!aside.classList.contains("not-visible")) {
+      body.classList.add("restrictScroll");
+    } else {
+      body.classList.remove("restrictScroll");
+    }
+  } else {
+    body.classList.remove("restrictScroll");
+  }
+};
+
+chatButtonHeader.addEventListener("click", () => {
+  removeFeedback();
 });
 chatButtonAside.addEventListener("click", () => {
-  modalFeedback.classList.remove("not-visible");
+  removeFeedback();
 });
 
 callButtonHeader.addEventListener("click", () => {
-  modalCall.classList.remove("not-visible");
+  removeCall();
 });
 callButtonAside.addEventListener("click", () => {
-  modalCall.classList.remove("not-visible");
+  removeCall();
 });
 
 modalButtonClose.forEach((btn) => {
   btn.addEventListener("click", () => {
-    modalFeedback.classList.add("not-visible");
-    modalCall.classList.add("not-visible");
+    addFeedback();
+    addCall();
   });
 });
 
 modalButton.forEach((btn) => {
   btn.addEventListener("click", (evt) => {
     evt.preventDefault();
-    modalFeedback.classList.add("not-visible");
-    modalCall.classList.add("not-visible");
+    addFeedback();
+    addCall();
   });
 });
+
+window.addEventListener("click", outsideClickModal);
+
+function outsideClickModal(e) {
+  modals.forEach((modal) => {
+    if (e.target == modal) {
+      addFeedback();
+      addCall();
+    }
+  });
+}

@@ -1,8 +1,7 @@
 import modalJS from "./modal";
 import "../styles/style.css";
-import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
-
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
 
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1.2,
@@ -20,8 +19,9 @@ const brandsImg = document.querySelector(".brands__img");
 const buttonHiddenIpad = document.querySelectorAll(".brands__display--ipad");
 const burgerButton = document.querySelector(".header__button--burger");
 const closeBurgerButton = document.querySelector(".button--burger-close");
-const aside = document.querySelector(".aside");
-
+export const aside = document.querySelector(".aside");
+const asidePage = aside.querySelector(".page__aside");
+export const body = document.querySelector("body");
 
 hideButtonBrands();
 
@@ -140,6 +140,8 @@ window.addEventListener("resize", hiddenItemIpad);
 
 const toggleAside = function () {
   aside.classList.toggle("not-visible");
+  asidePage.classList.toggle("appear__left");
+  body.classList.toggle("restrictScroll");
 };
 
 burgerButton.addEventListener("click", (e) => {

@@ -1,9 +1,9 @@
-.not-visibile {
+.not-visible {
   visibility: hidden;
   opacity: 0;
 }
 
-.visibile {
+.visible {
   visibility: visible;
   opacity: 1;
 }
@@ -109,7 +109,7 @@
   color: #ff3e79;
 }
 
-.modal__button {
+.modal__button.button {
   width: 119px;
   height: 32px;
   border-radius: 16px;
