@@ -189,6 +189,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./src/js/index.js");
 
 var modals = document.querySelectorAll(".modal");
+var modalBody = document.querySelectorAll(".modal__body");
 var chatButtonHeader = document.querySelector(".header__button--chat");
 var chatButtonAside = document.querySelector(".button--chat");
 var callButtonHeader = document.querySelector(".header__button--call");
@@ -198,18 +199,33 @@ var modalButtonClose = document.querySelectorAll(".modal__close");
 var modalFeedback = document.querySelector(".modal__feedback");
 var modalCall = document.querySelector(".modal__call");
 
+var addClassModalBody = function addClassModalBody() {
+  modalBody.forEach(function (body) {
+    body.classList.add("appear__right");
+  });
+};
+
+var removeClassModalBody = function removeClassModalBody() {
+  modalBody.forEach(function (body) {
+    body.classList.remove("appear__right");
+  });
+};
+
 var removeFeedback = function removeFeedback() {
   modalFeedback.classList.remove("not-visible");
   _index__WEBPACK_IMPORTED_MODULE_0__.body.classList.add("restrictScroll");
+  addClassModalBody();
 };
 
 var removeCall = function removeCall() {
   modalCall.classList.remove("not-visible");
   _index__WEBPACK_IMPORTED_MODULE_0__.body.classList.add("restrictScroll");
+  addClassModalBody();
 };
 
 var addFeedback = function addFeedback() {
   modalFeedback.classList.add("not-visible");
+  removeClassModalBody();
 
   if (window.innerWidth <= 768) {
     if (!_index__WEBPACK_IMPORTED_MODULE_0__.aside.classList.contains("not-visible")) {
@@ -224,6 +240,7 @@ var addFeedback = function addFeedback() {
 
 var addCall = function addCall() {
   modalCall.classList.add("not-visible");
+  removeClassModalBody();
 
   if (window.innerWidth <= 768) {
     if (!_index__WEBPACK_IMPORTED_MODULE_0__.aside.classList.contains("not-visible")) {
@@ -12436,4 +12453,4 @@ _esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__.default.use(compone
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bungle.4b956dba1478b3a1f813.js.map
+//# sourceMappingURL=bungle.ad76d172f6ea605ba65a.js.map
