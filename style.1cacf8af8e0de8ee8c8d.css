@@ -731,7 +731,7 @@ a {
   margin-left: 1rem;
 }
 
-.brands__img {
+.brands__img, .equipment__img {
   margin-left: 10px;
 }
 
@@ -1891,4 +1891,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.6e9fcf2cb2b204bb986f.css.map*/
+/*# sourceMappingURL=style.1cacf8af8e0de8ee8c8d.css.map*/
