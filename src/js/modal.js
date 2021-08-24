@@ -20,7 +20,6 @@ const addClassModalBody = function () {
     body.classList.add("appear__right");
   });
 };
-
 const removeClassModalBody = function () {
   modalBody.forEach((body) => {
     body.classList.remove("appear__right");
