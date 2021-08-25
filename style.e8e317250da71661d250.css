@@ -52,15 +52,6 @@
   align-items: center;
 }
 
-/* .button--burger-close {
-  background-image: url("../img/burger-close.svg");
-  display: none;
-}
-
-.button--search {
-  background-image: url("../img/search.svg");
-} */
-
 .menu__item {
   margin-bottom: 32px;
   color: #000000;
@@ -119,18 +110,6 @@
 .button--chat {
   margin-right: 1rem;
 }
-
-/* .button--call {
-  background-image: url("../img/call.svg");
-}
-
-.button--chat {
-  background-image: url("../img/chat.svg");
-}
-
-.button--profile {
-  background-image: url("../img/profile.svg");
-} */
 
 .button--burger-close,
 .button--search,
@@ -258,14 +237,6 @@
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
-
-/* .modal__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-} */
 
 .modal__close {
   position: absolute;
@@ -1891,4 +1862,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.1cacf8af8e0de8ee8c8d.css.map*/
+/*# sourceMappingURL=style.e8e317250da71661d250.css.map*/
