@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const autoprefixer = require('autoprefixer');
 var ghpages = require('gh-pages');
 ghpages.publish('dist', function(err) {});
 
@@ -60,22 +59,10 @@ module.exports = {
         ],
         type: "javascript/auto",
       },
-      //   {
-      //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //     type: "asset/resource",
-
-      //   },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
-      //   {
-      //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
-      //     loader: 'file-loader',
-      //     options: {
-      //       name: '[path][name].[ext]',
-      //     },
-      //   },
     ],
   },
 };

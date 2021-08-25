@@ -49,15 +49,6 @@
   align-items: center;
 }
 
-/* .button--burger-close {
-  background-image: url("../img/burger-close.svg");
-  display: none;
-}
-
-.button--search {
-  background-image: url("../img/search.svg");
-} */
-
 .menu__item {
   margin-bottom: 32px;
   color: #000000;
@@ -116,18 +107,6 @@
 .button--chat {
   margin-right: 1rem;
 }
-
-/* .button--call {
-  background-image: url("../img/call.svg");
-}
-
-.button--chat {
-  background-image: url("../img/chat.svg");
-}
-
-.button--profile {
-  background-image: url("../img/profile.svg");
-} */
 
 .button--burger-close,
 .button--search,

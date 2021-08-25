@@ -26,14 +26,6 @@
   transition-timing-function: ease;
 }
 
-/* .modal__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-} */
-
 .modal__close {
   position: absolute;
   top: 35px;
@@ -167,7 +159,7 @@
   }
 
   .modal__title::before {
-    top: 75px;
+    top: 70px;
     left: 0;
   }
 
