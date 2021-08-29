@@ -146,7 +146,7 @@ a {
     display: block;
   }
 }
-.button--search {
+.button .button--search {
   background-image: url(b06f375524a90db91a99.svg);
 }
 
@@ -1750,4 +1750,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=style.d999494f9edf4c52d7b2.css.map*/
+/*# sourceMappingURL=style.d2e9a6ee99ebca395e4c.css.map*/
